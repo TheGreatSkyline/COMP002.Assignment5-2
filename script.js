@@ -16,6 +16,32 @@
 let balloon = document.getElementById("balloon"); // Get the balloon element by its ID
 let size = 100; // Initial size of the balloon in percentage
 
+function handleKey(event) { 
+    // Define the function handleKey, which takes an event parameter
+    if (balloon.innerHTML !== "💥") { 
+        // Check if the balloon has not exploded
+        if (event.key === "ArrowUp") { 
+            // Check if the up arrow key is pressed
+            size *= 1.1; 
+            // Increase the balloon size by 10%
+        } else if (event.key === "ArrowDown") { 
+            // Check if the down arrow key is pressed
+            size *= 0.9; 
+            // Decrease the balloon size by 10%
+        }
+        if (size > 600) { 
+            // Check if the balloon size exceeds 600%
+            balloon.innerHTML = "💥"; 
+            // Replace the balloon emoji with an explosion emoji
+            window.removeEventListener("keydown", handleKey); 
+            // Remove the event listener to stop further size changes
+        } else {
+            balloon.style.fontSize = size + "%"; 
+            // Update the balloon's font size to the new size
+        }
+    }
+}
+
 
 
 
