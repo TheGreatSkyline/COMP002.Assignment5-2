@@ -82,5 +82,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const tab3Content = document.getElementById('tab3'); 
     // Get the content element for Tab 3
 
+    // Function to hide all tab contents
+    function hideAllTabs() {
+        tab1Content.style.display = 'none'; 
+        // Hide Tab 1 content
+        tab2Content.style.display = 'none'; 
+        // Hide Tab 2 content
+        tab3Content.style.display = 'none'; 
+        // Hide Tab 3 content
+    }
+
     
 });
