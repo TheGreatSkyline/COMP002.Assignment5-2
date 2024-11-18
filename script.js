@@ -142,6 +142,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Add active class to Tab 3 link
     });
 
+
     // Initialize: show the first tab and set it as active
     hideAllTabs(); 
     // Hide all tab contents initially
