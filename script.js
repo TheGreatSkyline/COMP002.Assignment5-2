@@ -42,6 +42,9 @@ function handleKey(event) {
     }
 }
 
+window.addEventListener("keydown", handleKey); 
+// Add an event listener to handle keydown events
+
 
 
 
