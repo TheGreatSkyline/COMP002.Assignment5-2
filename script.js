@@ -129,5 +129,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Add active class to Tab 2 link
     });
 
+    tab3Link.addEventListener('click', (e) => {
+        e.preventDefault(); 
+        // Prevent the default link behavior
+        hideAllTabs(); 
+        // Hide all tab contents
+        removeActiveClass(); 
+        // Remove active class from all tab links
+        tab3Content.style.display = 'block'; 
+        // Show Tab 3 content
+        tab3Link.classList.add('active'); 
+        // Add active class to Tab 3 link
+    });
+
     
 });
