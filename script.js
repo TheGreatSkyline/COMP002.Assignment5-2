@@ -63,3 +63,24 @@ window.addEventListener("keydown", function(e) {
 // function as expected. There are many ways to accomplish this task, but you will need
 // to at minimum add listeners to each link and toggle the display of the tab contents.
 // Hint: display: none; hides an element, and display: block; will bring it
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Wait until the DOM is fully loaded
+
+    // Get references to the tab links and tab contents
+    const tab1Link = document.getElementById('tab1Link'); 
+    // Get the link element for Tab 1
+    const tab2Link = document.getElementById('tab2Link'); 
+    // Get the link element for Tab 2
+    const tab3Link = document.getElementById('tab3Link'); 
+    // Get the link element for Tab 3
+
+    const tab1Content = document.getElementById('tab1'); 
+    // Get the content element for Tab 1
+    const tab2Content = document.getElementById('tab2'); 
+    // Get the content element for Tab 2
+    const tab3Content = document.getElementById('tab3'); 
+    // Get the content element for Tab 3
+
+    
+});
