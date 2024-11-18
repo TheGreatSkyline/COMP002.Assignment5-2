@@ -45,7 +45,15 @@ function handleKey(event) {
 window.addEventListener("keydown", handleKey); 
 // Add an event listener to handle keydown events
 
-
+// Prevent arrow keys from scrolling the page
+window.addEventListener("keydown", function(e) { 
+    // Add another event listener to handle keydown events
+    if (["ArrowUp", "ArrowDown"].indexOf(e.key) > -1) { 
+        // Check if the key pressed is the up or down arrow
+        e.preventDefault(); 
+        // Prevent the default action (scrolling) for the arrow keys
+    }
+}, false);
 
 
 // 2. The index.html page has a tabbed layout. Make the default state of the layout show
