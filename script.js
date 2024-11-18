@@ -92,5 +92,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Hide Tab 3 content
     }
 
+    // Function to remove active class from all tab links
+    function removeActiveClass() {
+        tab1Link.classList.remove('active'); 
+        // Remove active class from Tab 1 link
+        tab2Link.classList.remove('active'); 
+        // Remove active class from Tab 2 link
+        tab3Link.classList.remove('active'); 
+        // Remove active class from Tab 3 link
+    }
+
     
 });
